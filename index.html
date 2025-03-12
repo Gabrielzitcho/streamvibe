@@ -85,13 +85,32 @@
             border-radius: 5px;
             border: none;
         }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .imagens-produto img {
+                width: 90%; /* Ajusta a largura das imagens do produto para telas menores */
+            }
+            .imagens-fundadores img {
+                width: 100px; /* Ajusta o tamanho das imagens da equipe */
+                height: 100px; /* Ajusta o tamanho das imagens da equipe */
+            }
+            button {
+                font-size: 1em; /* Ajusta o tamanho do botão em telas menores */
+                padding: 8px 16px; /* Ajusta o padding do botão */
+            }
+            section {
+                padding: 20px 10px; /* Ajusta o padding das seções em telas menores */
+            }
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>StreamVibe</h1>
         <p>Conectando você à melhor música com inteligência artificial</p>
-        <button>Inscreva-se</button>
+        <!-- Link para a inscrição -->
+        <a href="#inscricao"><button>Inscreva-se</button></a>
     </header>
     
     <section id="sobre">
