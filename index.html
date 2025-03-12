@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamVibe - O Futuro da Música</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            color: #ffffff;
+            text-align: center;
+        }
+        header {
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #ff4d6d;
+        }
+        button {
+            background: #ff4d6d;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+        section {
+            padding: 40px 20px;
+        }
+
+        /* Ajuste nas imagens do produto */
+        .imagens-produto {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 15px;
+        }
+
+        .imagens-produto img {
+            width: 45%; /* Ajusta o tamanho das imagens dos produtos */
+            height: auto; /* Mantém a proporção */
+            border-radius: 10px; /* Adiciona bordas arredondadas para suavizar */
+        }
+
+        /* Ajuste nas imagens da equipe */
+        .imagens-fundadores {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 15px;
+        }
+
+        .imagens-fundadores img {
+            width: 150px; /* Defini o tamanho fixo das imagens para ficarem simétricas */
+            height: 150px; /* Defini uma altura fixa para as imagens */
+            border-radius: 50%; /* Para as imagens ficarem circulares */
+            object-fit: cover; /* Faz as imagens se ajustarem sem perder proporção */
+        }
+
+        .membro {
+            text-align: center;
+        }
+
+        footer {
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.8);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        input {
+            margin: 10px 0;
+            padding: 10px;
+            width: 80%;
+            max-width: 400px;
+            border-radius: 5px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>StreamVibe</h1>
+        <p>Conectando você à melhor música com inteligência artificial</p>
+        <button>Inscreva-se</button>
+    </header>
+    
+    <section id="sobre">
+        <h2>Sobre a StreamVibe</h2>
+        <p>A StreamVibe é uma plataforma inovadora de streaming que recomenda músicas personalizadas e conecta artistas independentes ao público certo.</p>
+        <div class="imagens-produto">
+            <img src="produto1.jpg.webp" alt="Interface da StreamVibe">
+            <img src="produto2.jpg.webp" alt="App mobile da StreamVibe">
+        </div>
+    </section>
+    
+    <section id="equipe">
+        <h2>Nossa Equipe</h2>
+        <div class="imagens-fundadores">
+            <div class="membro">
+                <img src="fundador1.jpg.webp" alt="João Silva - CEO">
+                <p>João Silva - CEO</p>
+            </div>
+            <div class="membro">
+                <img src="fundador2.jpg.jpg" alt="Maria Souza - CTO">
+                <p>Maria Souza - CTO</p>
+            </div>
+            <div class="membro">
+                <img src="fundador3.jpg.jpg" alt="Carlos Lima - Designer">
+                <p>Carlos Lima - Designer</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="inscricao">
+        <h2>Cadastre-se para Saber Mais</h2>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade" required>
+            
+            <label for="estado">Estado:</label>
+            <input type="text" id="estado" name="estado" required>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 StreamVibe - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
