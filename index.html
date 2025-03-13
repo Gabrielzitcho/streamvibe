@@ -9,57 +9,30 @@
         body {
             background: linear-gradient(to right, #1a1a1a, #333);
             color: white;
-            text-align: center;
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background: linear-gradient(to right, #ff8c00, #ff4500);
-            padding: 20px;
+            text-align: center;
         }
         .imagens-produto img {
             width: 45%;
-            max-width: 100%;
             margin: 10px;
             border-radius: 10px;
         }
-        .imagens-produto, .imagens-fundadores {
+        .imagens-produto {
             display: flex;
-            flex-wrap: wrap;
             justify-content: center;
             gap: 20px;
-        }
-        .imagens-fundadores img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 3px solid white;
-        }
-        .btn, .btn-secundario {
-            background-color: #ff4500;
-            border: none;
-            cursor: pointer;
-            margin: 5px;
-            font-size: 16px;
-            padding: 10px 20px;
-            border-radius: 10px;
-            color: white;
-            text-decoration: none;
-            display: inline-block;
-        }
-        .btn-secundario {
-            background-color: #555;
+            flex-wrap: wrap;
+            margin-top: 20px;
         }
         .imagens-fundadores {
             display: flex;
             justify-content: center;
-            gap: 20px;
+            gap: 40px;
             flex-wrap: wrap;
-        }
-        .imagens-fundadores div {
             text-align: center;
+        }
+        .fundador {
+            width: 200px;
         }
         .imagens-fundadores img {
             width: 150px;
@@ -67,24 +40,54 @@
             border-radius: 50%;
             object-fit: cover;
             border: 3px solid white;
+            margin-bottom: 10px;
+        }
+        header {
+            background: linear-gradient(to right, #1a1a2e, #333);
+            padding: 20px;
+            color: white;
+        }
+        .botoes {
+            margin-top: 15px;
+        }
+        .btn, .btn-secundario {
+            display: inline-block;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 16px;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin: 5px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .btn {
+            background-color: #6200ea;
+        }
+        .btn:hover {
+            background-color: #4500a0;
+        }
+        .btn-secundario {
+            background-color: #333;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>StreamVibe</h1>
-        <p>Conectando você à música do futuro com tecnologia de ponta.</p>
-        <div class="buttons">
-            <a href="#inscricao" class="btn">Inscrever-se</a>
+        <p>StreamVibe é a plataforma que revoluciona a forma como você escuta música!</p>
+        <div class="botoes">
+            <a href="#sobre" class="btn">Descubra Mais</a>
             <a href="#quem-somos" class="btn-secundario">Quem Somos</a>
         </div>
     </header>
     
     <section id="sobre">
         <h2>Descubra o Futuro da Música</h2>
-        <p>O StreamVibe revoluciona a forma como você ouve música, oferecendo uma experiência personalizada e inovadora. Com tecnologia de inteligência artificial e curadoria especializada, garantimos que cada momento seja acompanhado pela trilha sonora perfeita.</p>
+        <p>StreamVibe é a plataforma que revoluciona a experiência musical, utilizando inteligência artificial para criar playlists personalizadas, recomendações precisas e proporcionar uma experiência sonora única. Conecte-se ao futuro da música com a tecnologia mais avançada do mercado.</p>
         <div class="imagens-produto">
-            <img src="produto1.webp" alt="Plataforma StreamVibe">
+            <img src="produto1.jpg" alt="Imagem do produto 1">
             <img src="produto2.jpg" alt="Interface do StreamVibe">
         </div>
     </section>
@@ -93,27 +96,31 @@
         <h2>Quem Somos</h2>
         <div class="imagens-fundadores">
             <div>
-                <img src="fundador1.webp" alt="Foto de João Silva">
-                <p><strong>João Silva - CEO</strong></p>
+                <img src="fundador1.jpg" alt="João Silva - CEO">
+                <h3>João Silva - CEO</h3>
+                <p>João é um empreendedor visionário apaixonado por música e tecnologia. Fundador da StreamVibe, sua missão é revolucionar o modo como o mundo consome música, utilizando o poder da IA para criar experiências personalizadas e únicas.</p>
             </div>
             <div>
-                <img src="fundador2.webp" alt="Foto de Maria Souza">
-                <p><strong>Maria Souza - CTO</strong></p>
+                <img src="fundador2.jpg" alt="Foto de Maria Souza">
+                <h3>Maria Souza - CTO</h3>
+                <p>Especialista em inteligência artificial e inovação, Maria lidera o desenvolvimento tecnológico da StreamVibe. Seu objetivo é proporcionar recomendações musicais mais inteligentes e intuitivas.</p>
             </div>
             <div>
-                <img src="fundador3.webp" alt="Foto de Carlos Mendes">
-                <p><strong>Carlos Mendes - Designer UX/UI</strong></p>
+                <img src="fundador3.jpg" alt="Foto de Carlos Mendes">
+                <h3>Carlos Mendes - Designer UX/UI</h3>
+                <p>Carlos é responsável por criar uma interface inovadora e intuitiva, garantindo a melhor experiência para os usuários da plataforma.</p>
             </div>
         </div>
     </section>
     
     <section id="inscricao">
-        <h2>Junte-se a nós!</h2>
+        <h2>Junte-se à Revolução Musical</h2>
         <form>
             <input type="text" placeholder="Nome Completo" required>
             <input type="email" placeholder="E-mail" required>
-            <button type="submit" class="btn">Inscrever-se</button>
+            <button type="submit" class="btn">Cadastre-se</button>
         </form>
+        <a href="#quem-somos" class="btn-secundario">Quem Somos</a>
     </section>
     
     <footer>
