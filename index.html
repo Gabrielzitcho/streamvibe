@@ -3,73 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StreamVibe - O Futuro da Música</title>
+    <title>StreamVibe</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
-            background: linear-gradient(to right, #1a1a1a, #333);
-            color: white;
             font-family: Arial, sans-serif;
+            background: #121212;
+            color: white;
             text-align: center;
+            padding: 20px;
         }
-        .imagens-produto img {
-            width: 45%;
-            margin: 10px;
-            border-radius: 10px;
-        }
-        .imagens-produto {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-        .imagens-fundadores {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            flex-wrap: wrap;
-            text-align: center;
-        }
-        .fundador {
-            width: 200px;
-        }
-        .imagens-fundadores img {
+        .imagens-produto img, .imagens-fundadores img {
             width: 150px;
             height: 150px;
             border-radius: 50%;
             object-fit: cover;
             border: 3px solid white;
-            margin-bottom: 10px;
+            margin: 10px;
         }
-        header {
-            background: linear-gradient(to right, #1a1a2e, #333);
-            padding: 20px;
-            color: white;
+        .imagens-produto, .imagens-fundadores {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
         }
-        .botoes {
-            margin-top: 15px;
+        .fundador {
+            text-align: center;
         }
-        .btn, .btn-secundario {
-            display: inline-block;
-            padding: 10px 20px;
-            text-decoration: none;
+        .botoes a, form input, form button {
+            display: block;
+            margin: 10px auto;
+            padding: 10px;
+            width: 80%;
+            max-width: 300px;
             font-size: 16px;
+            border-radius: 5px;
+            border: none;
+        }
+        form input, form button {
+            padding: 10px;
+            width: 80%;
+        }
+        form button {
+            background-color: #007bff;
             color: white;
             border: none;
             cursor: pointer;
-            margin: 5px;
-            border-radius: 5px;
-            transition: background 0.3s;
-        }
-        .btn {
-            background-color: #6200ea;
-        }
-        .btn:hover {
-            background-color: #4500a0;
-        }
-        .btn-secundario {
-            background-color: #333;
         }
     </style>
 </head>
@@ -79,52 +58,51 @@
         <p>StreamVibe é a plataforma que revoluciona a forma como você escuta música!</p>
         <div class="botoes">
             <a href="#sobre" class="btn">Descubra Mais</a>
-            <a href="#quem-somos" class="btn-secundario">Quem Somos</a>
+            <a href="#quem-somos" class="btn">Sobre Nós</a>
+            <a href="#cadastro" class="btn">Cadastre-se</a>
         </div>
     </header>
     
     <section id="sobre">
-        <h2>Descubra o Futuro da Música</h2>
-        <p>StreamVibe é a plataforma que revoluciona a experiência musical, utilizando inteligência artificial para criar playlists personalizadas, recomendações precisas e proporcionar uma experiência sonora única. Conecte-se ao futuro da música com a tecnologia mais avançada do mercado.</p>
+        <h2>Descubra Mais Sobre a StreamVibe</h2>
+        <p>A StreamVibe foi fundada em 2018 e tem sua sede em São Paulo, Brasil. Ao longo dos anos, nos consolidamos como uma das principais plataformas de streaming de música, proporcionando uma experiência sonora personalizada e inovadora para milhões de usuários ao redor do mundo.</p>
         <div class="imagens-produto">
-            <img src="produto1.jpg" alt="Imagem do produto 1">
-            <img src="produto2.jpg" alt="Interface do StreamVibe">
+            <img src="sede.jpg" alt="Sede da StreamVibe">
+            <img src="equipe.jpg" alt="Equipe da StreamVibe">
         </div>
+    </section>
+    
+    <section id="descubra-mais">
+        <h2>Descubra Mais Sobre a StreamVibe</h2>
+        <p>Com mais de 10 anos de inovação, a StreamVibe se estabeleceu como uma das principais plataformas de streaming musical do mundo. Nossa sede está localizada em São Paulo, Brasil, e contamos com uma equipe de especialistas em tecnologia e música, sempre buscando oferecer a melhor experiência sonora para nossos usuários.</p>
     </section>
     
     <section id="quem-somos">
         <h2>Quem Somos</h2>
         <div class="imagens-fundadores">
-            <div>
+            <div class="fundador">
                 <img src="fundador1.jpg" alt="João Silva - CEO">
                 <h3>João Silva - CEO</h3>
-                <p>João é um empreendedor visionário apaixonado por música e tecnologia. Fundador da StreamVibe, sua missão é revolucionar o modo como o mundo consome música, utilizando o poder da IA para criar experiências personalizadas e únicas.</p>
+                <p>João é um empreendedor visionário apaixonado por música e tecnologia. Com anos de experiência no setor, ele fundou a StreamVibe para transformar a forma como as pessoas consomem música.</p>
             </div>
-            <div>
-                <img src="fundador2.jpg" alt="Foto de Maria Souza">
+            <div class="fundador">
+                <img src="fundador2.jpg" alt="Maria Souza - CTO">
                 <h3>Maria Souza - CTO</h3>
-                <p>Especialista em inteligência artificial e inovação, Maria lidera o desenvolvimento tecnológico da StreamVibe. Seu objetivo é proporcionar recomendações musicais mais inteligentes e intuitivas.</p>
+                <p>Especialista em inteligência artificial e inovação, Maria lidera o desenvolvimento tecnológico da StreamVibe. Seu objetivo é proporcionar recomendações musicais mais inteligentes e intuitivas para cada usuário.</p>
             </div>
-            <div>
-                <img src="fundador3.jpg" alt="Foto de Carlos Mendes">
-                <h3>Carlos Mendes - Designer UX/UI</h3>
-                <p>Carlos é responsável por criar uma interface inovadora e intuitiva, garantindo a melhor experiência para os usuários da plataforma.</p>
-            </div>
-        </div>
     </section>
     
-    <section id="inscricao">
+    <section id="cadastro">
         <h2>Junte-se à Revolução Musical</h2>
+        <p>Preencha o formulário abaixo para se manter atualizado com as novidades da StreamVibe.</p>
         <form>
             <input type="text" placeholder="Nome Completo" required>
             <input type="email" placeholder="E-mail" required>
-            <button type="submit" class="btn">Cadastre-se</button>
+            <input type="text" placeholder="Cidade" required>
+            <input type="text" placeholder="Estado" required>
+            <button type="submit">Quero me cadastrar!</button>
         </form>
-        <a href="#quem-somos" class="btn-secundario">Quem Somos</a>
     </section>
-    
-    <footer>
-        <p>2025 StreamVibe - Todos os direitos reservados</p>
-    </footer>
 </body>
 </html>
+
