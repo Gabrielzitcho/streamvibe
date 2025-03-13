@@ -3,14 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StreamVibe - O Futuro da Música</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>StreamVibe - Plataforma de Streaming</title>
     <style>
         body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            font-family: Arial, sans-serif;
+            background: #1a1a2e;
             color: #ffffff;
             text-align: center;
         }
@@ -19,123 +16,68 @@
             background: rgba(0, 0, 0, 0.8);
         }
         h1 {
-            font-size: 2.5em;
-            color: #ff4d6d;
-        }
-        button {
-            background: #ff4d6d;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            font-size: 1.2em;
-            cursor: pointer;
+            font-size: 2em;
         }
         section {
             padding: 40px 20px;
         }
-
-        /* Ajuste nas imagens do produto */
-        .imagens-produto {
+        button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background: #16213e;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 15px;
+            border-radius: 5px;
+        }
+        .imagens-produto, .imagens-fundadores {
             display: flex;
             justify-content: center;
             gap: 30px;
+            flex-wrap: wrap;
             margin-top: 15px;
         }
-
-        .imagens-produto img {
-            width: 45%; /* Ajusta o tamanho das imagens dos produtos */
-            height: auto; /* Mantém a proporção */
-            border-radius: 10px; /* Adiciona bordas arredondadas para suavizar */
+        .imagens-produto img, .imagens-fundadores img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
         }
-
-        /* Ajuste nas imagens da equipe */
-        .imagens-fundadores {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin-top: 15px;
-        }
-
-        .imagens-fundadores img {
-            width: 150px; /* Defini o tamanho fixo das imagens para ficarem simétricas */
-            height: 150px; /* Defini uma altura fixa para as imagens */
-            border-radius: 50%; /* Para as imagens ficarem circulares */
-            object-fit: cover; /* Faz as imagens se ajustarem sem perder proporção */
-        }
-
         .membro {
             text-align: center;
-        }
-
-        footer {
-            padding: 10px;
-            background: rgba(0, 0, 0, 0.8);
-        }
-        form {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        input {
-            margin: 10px 0;
-            padding: 10px;
-            width: 80%;
-            max-width: 400px;
-            border-radius: 5px;
-            border: none;
-        }
-
-        /* Responsividade */
-        @media (max-width: 768px) {
-            .imagens-produto img {
-                width: 90%; /* Ajusta a largura das imagens do produto para telas menores */
-            }
-            .imagens-fundadores img {
-                width: 100px; /* Ajusta o tamanho das imagens da equipe */
-                height: 100px; /* Ajusta o tamanho das imagens da equipe */
-            }
-            button {
-                font-size: 1em; /* Ajusta o tamanho do botão em telas menores */
-                padding: 8px 16px; /* Ajusta o padding do botão */
-            }
-            section {
-                padding: 20px 10px; /* Ajusta o padding das seções em telas menores */
-            }
+            max-width: 300px;
+            margin: auto;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>StreamVibe</h1>
-        <p>Conectando você à melhor música com inteligência artificial</p>
-        <!-- Link para a inscrição -->
-        <a href="#inscricao"><button>Inscreva-se</button></a>
+        <h1>StreamVibe - O Futuro da Música</h1>
+        <button onclick="alert('Cadastro em breve!')">Saiba Mais</button>
     </header>
     
     <section id="sobre">
         <h2>Sobre a StreamVibe</h2>
-        <p>A StreamVibe é uma plataforma inovadora de streaming que recomenda músicas personalizadas e conecta artistas independentes ao público certo.</p>
-        <div class="imagens-produto">
-            <img src="produto1.jpg.webp" alt="Interface da StreamVibe">
-            <img src="produto2.jpg.webp" alt="App mobile da StreamVibe">
-        </div>
+        <p>A <strong>StreamVibe</strong> é uma plataforma inovadora de streaming que utiliza inteligência artificial para recomendar músicas personalizadas e conectar artistas independentes a um público global. Nosso objetivo é revolucionar a forma como você descobre e aprecia novas músicas, garantindo que cada experiência auditiva seja única e envolvente.</p>
     </section>
-    
+
     <section id="equipe">
         <h2>Nossa Equipe</h2>
         <div class="imagens-fundadores">
             <div class="membro">
                 <img src="fundador1.jpg.webp" alt="João Silva - CEO">
-                <p>João Silva - CEO</p>
+                <h3>João Silva - CEO</h3>
+                <p>Visionário e apaixonado por tecnologia e música, João lidera a StreamVibe com inovação e estratégia, impulsionando a conexão entre artistas e ouvintes.</p>
             </div>
             <div class="membro">
-                <img src="fundador2.jpg.jpg" alt="Maria Souza - CTO">
-                <p>Maria Souza - CTO</p>
+                <img src="fundador2.jpg.webp" alt="Maria Souza - CTO">
+                <h3>Maria Souza - CTO</h3>
+                <p>Especialista em tecnologia e inovação, Maria é a mente por trás da arquitetura técnica e das inovações de nossa plataforma.</p>
             </div>
             <div class="membro">
-                <img src="fundador3.jpg.jpg" alt="Carlos Lima - Designer">
-                <p>Carlos Lima - Designer</p>
+                <img src="fundador3.jpg.webp" alt="Carlos Lima - Designer">
+                <h3>Carlos Lima - Designer</h3>
+                <p>Com um olhar afiado para detalhes e estética, Carlos garante que a experiência dos nossos usuários seja fluida e envolvente.</p>
             </div>
         </div>
     </section>
@@ -148,12 +90,6 @@
             
             <label for="email">E-mail:</label>
             <input type="email" id="email" name="email" required>
-            
-            <label for="cidade">Cidade:</label>
-            <input type="text" id="cidade" name="cidade" required>
-            
-            <label for="estado">Estado:</label>
-            <input type="text" id="estado" name="estado" required>
             
             <button type="submit">Enviar</button>
         </form>
